@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kode Mono", monospace;
+}
+
+.loginMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    overflow: visible;
+}
+
+.loginForm {
+    height: 100%;
+    /* width: 100%; */
+}
+
+.loginMain img {
+    height: 45%;
+    width: 45%;
+}
+
+.loginComponentMain {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+    border-radius: 1.5em;
+    padding: 2em;
+}
+
+.loginName {
+    font-size: 2.75em;
+    font-weight: 600;
+}
+
+.inputSection {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.inputSection span {
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #a50c22;
+}
+
+.inputSection input {
+    padding: 1em 1.75em;
+    border: none;
+    font-size: 1em;
+    border-radius: 0.55em;
+    background-color: #eeeeee;
+    width: 27.5vw;
+}
+
+.inputSection input:focus {
+    outline: none;
+    color: black;
+    font-weight: 500;
+}
+
+.loginForgotMain {
+    margin-bottom: 0.5em;
+}
+
+.loginForgot button {
+    font-size: 0.95em;
+    text-decoration: underline;
+    color: #8f8f8f;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+
+.loginButton {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.loginButton button {
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #a50c22;
+    padding: 1.25em 1.75em;
+    border: 0.5px solid #a50c22;
+    border-radius: 0.75em;
+    transition: 0.175s ease-in;
+    cursor: pointer;
+}
+
+.loginButton button:hover {
+    background-color: #a50c22;
+    color: white;
+    transition: 0.175s ease-in;
+}
+
+.loginToRegister button {
+    font-size: 0.95em;
+    text-decoration: underline;
+    color: #8f8f8f;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+
+.loginToRegister span {
+    font-size: 1em;
+}

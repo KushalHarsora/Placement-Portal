@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kode Mono", monospace;
+}
+
+.registerMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    overflow: hidden;
+}
+
+.registerMain img {
+    height: 45%;
+    width: 45%;
+}
+
+.registerForm {
+    height: 100%;
+    width: 100%;
+}
+
+.registerComponentMain {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+    border-radius: 1.5em;
+    padding: 2em;
+}
+
+.registerNameMain {
+    font-size: 2.75em;
+    font-weight: 600;
+}
+
+.registerName {
+    font-size: 1.75em;
+    font-weight: 500;
+    margin-top: 0.5em;
+}
+
+.inputSection {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin-top: 0.25em;
+}
+
+.inputSection span {
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #a50c22;
+}
+
+.inputSection input {
+    padding: 1em 1.75em;
+    border: none;
+    font-size: 1em;
+    border-radius: 0.55em;
+    background-color: #eeeeee;
+    width: 27.5vw;
+}
+
+.inputSection input:focus {
+    outline: none;
+    color: black;
+    font-weight: 500;
+}
+
+.registerButton {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.registerButton button {
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #a50c22;
+    padding: 1.25em 1.75em;
+    border: 0.5px solid #a50c22;
+    border-radius: 0.75em;
+    transition: 0.175s ease-in;
+    cursor: pointer;
+}
+
+.registerButton button:hover {
+    background-color: #a50c22;
+    color: white;
+    transition: 0.175s ease-in;
+}
+
+.registerToRegister button {
+    font-size: 0.95em;
+    text-decoration: underline;
+    color: #8f8f8f;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+
+.registerToRegister span {
+    font-size: 1em;
+}
