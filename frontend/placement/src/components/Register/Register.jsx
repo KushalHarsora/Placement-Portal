@@ -18,8 +18,7 @@ const Register = () => {
       timer: 1200
     });
     // Navigate to Login Page
-    navigate('/login');
-
+    navigate('/login'); 
   }
   return (
     <>
