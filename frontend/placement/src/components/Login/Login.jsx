@@ -76,7 +76,7 @@ const Login = () => {
                             </div>
 
                             <div className='loginButton'>
-                                <button onClick={handleSubmit}>
+                                <button onClick={() => navigate('/placementinfo')}>
                                     Login
                                 </button>
                             </div>
