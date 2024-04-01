@@ -57,7 +57,7 @@
     margin-top: 1em;
 }
 
-.inputSection span {
+.inputSectionLabel {
     margin-bottom: 0.5em;
     font-size: 1.25em;
     font-weight: 500;
@@ -128,4 +128,12 @@
 
 .loginToRegister span {
     font-size: 1em;
+}
+
+.error {
+    margin-left: 1em;
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: red;
 }

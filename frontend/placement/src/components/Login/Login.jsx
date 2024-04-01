@@ -3,8 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import './Login.css';
 import loginImage from '../../assets/login.png';
+import Validation from '../../userCredentials';
 
 const Login = () => {
+
+    const [emailError, setEmailError] = useState("");
 
     const [data, setData] = useState({
         email: "",
@@ -13,10 +16,9 @@ const Login = () => {
 
     useEffect(() => {
         console.log(data);
-    }, [data]);
+    }, [data, emailError]);
 
     const navigate = useNavigate();
-
 
     const handleSubmit = (e) => {
         // Handle Alert
@@ -34,10 +36,18 @@ const Login = () => {
         console.log(password.value);
         email.value = '';
         password.value = '';
-        
+
         console.log(data);
+        if(Validation(email) != "") {
+            setEmailError(Validation(email));
+            console.log("outside");
+            console.log(emailError);
+        } else if(Validation(email) == "") {
+            setEmailError("");
+            console.log("inside");
+            console.log(emailError);
+        }
         e.preventDefault();
-        // console.log(data);
     }
 
     return (
@@ -55,15 +65,18 @@ const Login = () => {
                             </div>
 
                             <div className='inputSection'>
-                                <span>
+                                <span className='inputSectionLabel'>
                                     Email
                                 </span>
-                                <input type="email" id='email' onChange={(e) => {setData({email: e.target.value});}}/>
+                                <input type="email" id='email' onChange={(e) => { setData({ email: e.target.value }); }} />
+                                {emailError && <span className='error'>
+                                    {emailError}
+                                </span>}
                             </div>
 
                             <div className='inputSection'>
                                 <div className='loginForgotMain'>
-                                    <span>
+                                    <span className='inputSectionLabel'>
                                         Password
                                     </span>
                                     <span className='loginForgot'>
@@ -72,7 +85,10 @@ const Login = () => {
                                         </button>
                                     </span>
                                 </div>
-                                <input type="password" id='password' onChange={(e) => {setData({password: e.target.value});}} />
+                                <input type="password" id='password' onChange={(e) => { setData({ password: e.target.value }); }} />
+                                {emailError && <span className='error'>
+                                    {emailError}
+                                </span>}
                             </div>
 
                             <div className='loginButton'>

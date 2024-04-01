@@ -39,21 +39,21 @@ const Register = () => {
             </div>
 
             <div className='inputSection'>
-              <span>
+              <span className='inputSectionLabel'>
                 Name
               </span>
               <input type="text" required/>
             </div>
 
             <div className='inputSection'>
-              <span>
+              <span className='inputSectionLabel'>
                 Email
               </span>
               <input type="email" required/>
             </div>
 
             <div className='inputSection'>
-              <span>
+              <span className='inputSectionLabel'>
                 Password
               </span>
               <input type="password" required/>
