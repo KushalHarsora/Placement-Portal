@@ -8,52 +8,49 @@ import d from '../../assets/d.png'
 const LandingPage = () => {
   const [activeTab, setActiveTab] = useState('Home'); // Manage active tab for navigation
 
+  const navigation = ["home", "login", "register"];
+
+  const navigate = useNavigate();
+
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
- 
+
   return (
     <div className="home-page">
-      <nav className="navbar"> 
-        <img src={Somaiya1Image} alt="Somaiya Logo" />
+      <nav className="navbar">
+        <img src={Somaiya1Image} alt="Somaiya Logo" style={{ "mixBlendMode": "multiply" }} />
         <ul>
-          <li>
-            <a href="#" onClick={() => handleTabClick('Home')}>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={() => handleTabClick('About')}>
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={() => handleTabClick('Contact')}>
-              Contact Us
-            </a>
-          </li>
+          {navigation.map((key) =>
+            <li
+              key={key}
+              onClick={() => { navigate(`/${key}`) }}
+              className='navbarItems'
+            >
+              {key.toUpperCase()}
+            </li>)}
         </ul>
       </nav>
       <header className="header">
         <h1>Placement Portal</h1>
       </header>
       <div className='container1'>
-      <img src={img1} alt="image1" />
+        <img src={img1} alt="image1" />
       </div>
       <div className='container2'>
-       <div className='aboutus'>
-        <div className='inner-section'>
-          <h1>About KJSIT</h1>
-          <p className='text'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quaerat perspiciatis laborum reiciendis ut voluptate harum dicta molestiae at eum? 
-            Illum saepe odio iste ea perspiciatis nulla velit, autem voluptate pariatur.
-          </p>
-          <div className='skills'>
-            <button>Read More</button>
+        <div className='aboutus'>
+          <div className='inner-section'>
+            <h1>About KJSIT</h1>
+            <p className='text'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quaerat perspiciatis laborum reiciendis ut voluptate harum dicta molestiae at eum?
+              Illum saepe odio iste ea perspiciatis nulla velit, autem voluptate pariatur.
+            </p>
+            <div className='skills'>
+              <button>Read More</button>
+            </div>
           </div>
         </div>
-      </div>
       </div>
       <div className='container3'>
         <section>
@@ -64,7 +61,7 @@ const LandingPage = () => {
             <div className='column'>
               <div className='card'>
                 <div className='img-container'>
-                <img className="d" src={d} alt="Devanshi's pic"/>
+                  <img className="d" src={d} alt="Devanshi's pic" />
                 </div>
                 <h2>Devanshi Joshi</h2>
                 <p>Studying at K.J. Somaiya Institute of Technology</p>
@@ -80,23 +77,7 @@ const LandingPage = () => {
             <div className='column'>
               <div className='card'>
                 <div className='img-container'>
-                <img className="d" src={d} alt="Devanshi's pic"/>
-                </div>
-                <h2>Devanshi Joshi</h2>
-                <p>Studying at K.J. Somaiya Institute of Technology</p>
-                <div className='icons'>
-                  <a href='#'>
-                    devanshi.kj@somaiya.edu
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div className='row'>
-            <div className='column'>
-              <div className='card'>
-                <div className='img-container'>
-                <img className="d" src={d} alt="Devanshi's pic"/>
+                  <img className="d" src={d} alt="Devanshi's pic" />
                 </div>
                 <h2>Devanshi Joshi</h2>
                 <p>Studying at K.J. Somaiya Institute of Technology</p>
@@ -112,7 +93,23 @@ const LandingPage = () => {
             <div className='column'>
               <div className='card'>
                 <div className='img-container'>
-                <img className="d" src={d} alt="Devanshi's pic"/>
+                  <img className="d" src={d} alt="Devanshi's pic" />
+                </div>
+                <h2>Devanshi Joshi</h2>
+                <p>Studying at K.J. Somaiya Institute of Technology</p>
+                <div className='icons'>
+                  <a href='#'>
+                    devanshi.kj@somaiya.edu
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='column'>
+              <div className='card'>
+                <div className='img-container'>
+                  <img className="d" src={d} alt="Devanshi's pic" />
                 </div>
                 <h2>Devanshi Joshi</h2>
                 <p>Studying at K.J. Somaiya Institute of Technology</p>
@@ -169,7 +166,7 @@ const LandingPage = () => {
             </form>
           </div>
         </div>
-      </div>  
+      </div>
       {/* <footer className="footer">
       <div className="footer-content">
         <h6>

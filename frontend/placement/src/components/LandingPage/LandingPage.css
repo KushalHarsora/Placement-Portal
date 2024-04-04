@@ -37,8 +37,17 @@
   display: flex;
 }
 
-.navbar li {
-  margin-right: 2rem;
+.navbarItems {
+  font-size: 1.25em;
+  cursor: pointer;
+  margin: 0 2em;
+  font-weight: 500;
+  transition: 0.2s ease-in;
+}
+
+.navbarItems:hover {
+  color: #a50c22;
+  transition: 0.2s ease-out;
 }
 
 .navbar a {
@@ -108,7 +117,6 @@
   background-color: #aacdf5;
   overflow: hidden;
   padding: 100px 0;
-
 }
 
 .inner-section{
