@@ -1,6 +1,6 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);const { express } = require('express');
-const dotenv = require('dotenv').config();
+// import { createRequire } from 'module';
+// const require = createRequire(import.meta.url);const { express } = require('express');
+const dotenv = require('dotenv').config()
 const cors = require('cors');
 const { Client } = require('pg');
 const db = require('./models');
