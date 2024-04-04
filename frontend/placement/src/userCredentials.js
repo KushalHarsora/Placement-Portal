@@ -1,7 +1,7 @@
 const Validation = (values) => {
 
     let error = "";
-    const emailPattern = RegExp('([a-zA-Z0-9\.-]{2,})@somaiya.edu');
+    const emailPattern = RegExp('+@somaiya.edu');
 
     if(values == "") {
         error = "Email should not be empty";

@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbarMain {
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1em;
+    background-color: rgb(255, 248, 248);
+}
+
+.navbarFirst {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.navbarFirst p {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #a50c22;
+    cursor: pointer;
+}
+
+.somaiyaImage {
+    height: 3.25em;
+    width: 10.5em;
+    cursor: pointer;
+}
+
+.navbarSecond {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.navbarSecond ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12em;
+}
+
+.navbarSecond ul li {
+    font-size: 1.1em;
+    font-weight: 500;
+    list-style-type: none;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.navbarSecond ul li:hover {
+    font-weight: 500;
+    color: #a50c22;
+    text-decoration: underline;
+    transition: 0.2s ease-in;
+}
+
+.profileImage {
+    height: 3.2em;
+    width: 3em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.disableProfileSection {
+    display: none;
+}
+
+.ShowProfileSection {
+    position: absolute;
+    right: 0.25em;
+    top: 6em;
+    padding: 0.75em 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    border: 1px solid black;
+    border-radius: 0.5em;
+}
+
+.ShowProfileSection span {
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.15s ease-in;
+}
+
+.ShowProfileSection span:hover {
+    font-weight: 600;
+    color: #a50c22;
+    transition: 0.15s ease-in;
+}

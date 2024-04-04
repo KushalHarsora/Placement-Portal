@@ -38,15 +38,16 @@ const Login = () => {
         password.value = '';
 
         console.log(data);
-        if(Validation(email) != "") {
-            setEmailError(Validation(email));
-            console.log("outside");
-            console.log(emailError);
-        } else if(Validation(email) == "") {
-            setEmailError("");
-            console.log("inside");
-            console.log(emailError);
-        }
+        // if(Validation(email) != "") {
+        //     setEmailError(Validation(email));
+        //     console.log("outside");
+        //     console.errpr(emailError);
+        // } else if(Validation(email) == "") {
+        //     setEmailError("");
+        //     console.log("inside");
+        //     console.error(emailError);
+        // }
+        navigate('/home');
         e.preventDefault();
     }
 
