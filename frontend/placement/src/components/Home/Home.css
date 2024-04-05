@@ -8,12 +8,13 @@
 
 .homeScrollBar {
     margin-top: 1em;
-    height: 30vh;
+    height: 25vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1em;
 }
 
 .homeScrollBarMain {
@@ -21,7 +22,7 @@
     align-items: center;
     justify-content: center;
     gap: 5em;
-    height: 30vh;
+    height: 15vh;
     width: 95%;
     padding: 0.25em 1em;
     overflow-y: hidden;
@@ -73,7 +74,7 @@
     width: 25px;
 }
 
-.home-container {
+/* .home-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -145,4 +146,39 @@
 .company-card p {
     font-size: 1rem;
     color: #555;
+} */
+
+.homeCurrentPost {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.companyCard button {
+    padding: 1em;
+    width: 100%;
+    border: 1.5px solid #a50c22;
+    border-radius: 1em;
+    background-color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: 0.2s ease-in;
+}
+
+.companyCard button:hover {
+    background-color: #a50c22;
+    color: white;
+    transition: 0.2s ease-out;
+}
+
+.current {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 }
