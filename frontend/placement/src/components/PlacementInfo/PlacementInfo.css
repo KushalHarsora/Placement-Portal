@@ -63,3 +63,68 @@ input[type="text"] {
 .placementInfoButton button:hover {
     background-color: #0056b3;
 }
+
+.placementInfoMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.placementInfoComponent {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.placementInfoHeader {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.placementInfoNameMain {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.placementInfoName {
+    font-size: 16px;
+    color: #666;
+}
+
+.inputSection {
+    margin-bottom: 15px;
+}
+
+.inputSection label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.inputSection input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.placementInfoButton {
+    text-align: center;
+}
+
+.placementInfoButton button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.placementInfoButton button:hover {
+    background-color: #0056b3;
+}
