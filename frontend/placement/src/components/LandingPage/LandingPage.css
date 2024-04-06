@@ -243,20 +243,23 @@
 }
 
 .card a{
+  display: flex;
   text-decoration: none;
   color: inherit;
   font-size: 1.4em ;
   align-items: center;
+  justify-content: center;
 }
 
-.card:hover{
+/* .card:hover{
   background-color: linear-gradient(#6045ea, #8567f7);
   color: #ffffff;
 }
 
 .card:hover .img-container{
   transform: scale(1.15);
-}
+} */
+
 .container4{
   min-height: 100vh;
   width: 100%;

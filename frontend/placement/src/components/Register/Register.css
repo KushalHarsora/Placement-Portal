@@ -7,6 +7,11 @@
     font-family: "Kode Mono", monospace;
 }
 
+.registerForm {
+    height: 100%;
+    width: 80%;
+}
+
 .registerMain {
     display: flex;
     flex-direction: row;
@@ -23,7 +28,7 @@
 
 .registerForm {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .registerComponentMain {

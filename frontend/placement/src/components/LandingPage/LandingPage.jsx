@@ -8,7 +8,7 @@ import d from '../../assets/d.png'
 const LandingPage = () => {
   const [activeTab, setActiveTab] = useState('Home'); // Manage active tab for navigation
 
-  const navigation = ["home", "login", "register"];
+  const navigation = ["login", "register"];
 
   const navigate = useNavigate();
 
@@ -60,9 +60,41 @@ const LandingPage = () => {
           <div className='row'>
             <div className='column'>
               <div className='card'>
-                <div className='img-container'>
+                {/* <div className='img-container'>
                   <img className="d" src={d} alt="Devanshi's pic" />
+                </div> */}
+                <h2>Prof. Nilesh Yadav</h2>
+                <p>Professor at K.J. Somaiya Institute of Technology</p>
+                <div className='icons'>
+                  <a href='#'>
+                    nilesh.yadav@somaiya.edu
+                  </a>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='column'>
+              <div className='card'>
+                {/* <div className='img-container'>
+                  <img className="d" src={d} alt="Devanshi's pic" />
+                </div> */}
+                <h2>Kushal Harsora</h2>
+                <p>Studying at K.J. Somaiya Institute of Technology</p>
+                <div className='icons'>
+                  <a href='#'>
+                    kushal.h@somaiya.edu
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='column'>
+              <div className='card'>
+                {/* <div className='img-container'>
+                  <img className="d" src={d} alt="Devanshi's pic" />
+                </div> */}
                 <h2>Devanshi Joshi</h2>
                 <p>Studying at K.J. Somaiya Institute of Technology</p>
                 <div className='icons'>
@@ -76,46 +108,14 @@ const LandingPage = () => {
           <div className='row'>
             <div className='column'>
               <div className='card'>
-                <div className='img-container'>
+                {/* <div className='img-container'>
                   <img className="d" src={d} alt="Devanshi's pic" />
-                </div>
-                <h2>Devanshi Joshi</h2>
+                </div> */}
+                <h2>Mohd. Umair Ansari</h2>
                 <p>Studying at K.J. Somaiya Institute of Technology</p>
                 <div className='icons'>
                   <a href='#'>
-                    devanshi.kj@somaiya.edu
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='column'>
-              <div className='card'>
-                <div className='img-container'>
-                  <img className="d" src={d} alt="Devanshi's pic" />
-                </div>
-                <h2>Devanshi Joshi</h2>
-                <p>Studying at K.J. Somaiya Institute of Technology</p>
-                <div className='icons'>
-                  <a href='#'>
-                    devanshi.kj@somaiya.edu
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='column'>
-              <div className='card'>
-                <div className='img-container'>
-                  <img className="d" src={d} alt="Devanshi's pic" />
-                </div>
-                <h2>Devanshi Joshi</h2>
-                <p>Studying at K.J. Somaiya Institute of Technology</p>
-                <div className='icons'>
-                  <a href='#'>
-                    devanshi.kj@somaiya.edu
+                    umair.ansari@somaiya.edu
                   </a>
                 </div>
               </div>

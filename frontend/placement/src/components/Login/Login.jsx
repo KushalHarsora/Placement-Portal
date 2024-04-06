@@ -55,7 +55,7 @@ const Login = () => {
         <>
             <div className='loginMain'>
                 <img src={loginImage} alt="Login" />
-                <form className='loginForm'>
+                <form className='loginForm' onSubmit={handleSubmit}>
 
                     <div className='loginComponentMain'>
 
@@ -69,7 +69,7 @@ const Login = () => {
                                 <span className='inputSectionLabel'>
                                     Email
                                 </span>
-                                <input type="email" id='email' onChange={(e) => { setData({ email: e.target.value }); }} />
+                                <input required type="email" id='email' onChange={(e) => { setData({ email: e.target.value }); }} />
                                 {emailError && <span className='error'>
                                     {emailError}
                                 </span>}
@@ -86,14 +86,14 @@ const Login = () => {
                                         </button>
                                     </span>
                                 </div>
-                                <input type="password" id='password' onChange={(e) => { setData({ password: e.target.value }); }} />
+                                <input required type="password" id='password' onChange={(e) => { setData({ password: e.target.value }); }} />
                                 {emailError && <span className='error'>
                                     {emailError}
                                 </span>}
                             </div>
 
                             <div className='loginButton'>
-                                <button onClick={handleSubmit}>
+                                <button type={'submit'}>
                                     Login
                                 </button>
                             </div>
